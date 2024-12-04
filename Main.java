@@ -12,7 +12,7 @@ public class Main{
         patient.displayDetails(currentYear);
         patient.DisplayNewInfo();
 
-        Patient invalidPatient = new Patient(1002, "Joe Dohn", 1990, -160.0, -65.0, "AB", 123456789);
+        Patient invalidPatient = new Patient(1002, "Joe Dohn", 1990, -160.0, -65.0, "AB", 1234056789);
         invalidPatient.displayDetails(currentYear);
         invalidPatient.DisplayNewInfo();
     }

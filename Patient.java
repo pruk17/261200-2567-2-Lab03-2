@@ -22,11 +22,12 @@ class Patient {
             this.bloodGroup = bloodGroup;
             if(phoneNumber >= 0 && phoneNumber <= 1000000000) this.phoneNumber = phoneNumber;
                 else if(phoneNumber <= 0) this.phoneNumber = phoneNumber*(-1);
-                else this.phoneNumber = 1000000000;
+                else this.phoneNumber = 0;
     }
         //updated ******************
         void DisplayNewInfo(){
-            System.out.println("Patient phoneNumber: 0" + phoneNumber);
+            if(phoneNumber != 0) System.out.println("Patient phoneNumber: 0" + phoneNumber);
+                else System.out.println("Patient phoneNumber: Invalid number");
             System.out.println("Patient bloodGroup: " + bloodGroup);
         }
         double getBMI(){
